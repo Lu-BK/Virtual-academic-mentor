@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>福州大学虚拟学业导师</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #f0f2f5;
+        min-height: 100dvh;
+        display: flex;
+        justify-content: center;
+      }
+    
+      iframe {
+        width: 100%;
+        max-width: 1200px;
+        height: 100dvh;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        opacity: 0;
+        animation: fadeIn 0.6s ease-out forwards;
+      }
+    
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+</head>
+<body>
+<iframe
+  src="http://43.142.195.35/chat/4EFZQSxq1RXVRZxg"
+  style="width: 100vw; height: 100vh; min-height: 700px"
+  frameborder="0"
+  allow="microphone">
+</iframe>
+<button class="nav-button" onclick="navigateTo('index')" style="margin-top: 20px; position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);">返回首页</button>
+<script>
+  function navigateTo(page) {
+    window.location.href = `${page}.html`;
+  }
+</script>
+</body>
+</html>
+<style>
+  .nav-button {
+    padding: 12px 24px;
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-button:hover {
+    background: linear-gradient(135deg, #45a049, #3d8b40);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+</style>

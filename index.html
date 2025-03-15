@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>虚拟学业导师主页</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .nav-button {
+            padding: 16px 32px;
+            font-size: 18px;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .nav-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <script>
+        function navigateTo(page) {
+            window.location.href = `${page}.html`;
+        }
+    </script>
+</head>
+<body>
+    <h1>欢迎使用虚拟学业导师系统</h1>
+    
+    <div class="button-container">
+        <button class="nav-button" onclick="navigateTo('虚拟导师文字交流')">文字交流</button>
+        <button class="nav-button" onclick="navigateTo('虚拟导师语音交流')">语音交流</button>
+    </div>
+
+    </script>
+</body>
+</html>
